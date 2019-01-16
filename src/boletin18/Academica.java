@@ -13,16 +13,13 @@ public class Academica {
     int nota;
     Persoal alumno;
 
-    public Academica(String nome, int nota, Persoal alumno) {
+    public Academica(int numreferencia, String nome, int nota, Persoal alumno) {
         this.nome = nome;
         this.nota = analizarNota(nota);
         this.alumno = alumno;
+        this.numreferencia= numreferencia;
     }
 
-    public Academica(String nome, int nota) {
-        this.nome = nome;
-        this.nota = nota;
-    }
 
     public int getNumreferencia() {
         return numreferencia;
